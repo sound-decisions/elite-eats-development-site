@@ -30,7 +30,7 @@ if (!isset($page_title)) {
           <img src="<?=$RELATIVE_PATH;?>assets/img/elite-eats-logo-white-text-color-icon.png" class="logo" />
         </a>
       </div>
-      <nav>
+      <nav class="large-screen">
         <ul>
           <li><a href="<?=$RELATIVE_PATH;?>index.php">Home</a></li>
           <li><a href="<?=$RELATIVE_PATH;?>site-diagram.php">Site Diagram</a></li>
@@ -38,3 +38,10 @@ if (!isset($page_title)) {
       </nav>
     </div>
   </header>
+
+  <nav class="small-screen">
+    <ul>
+      <li><a href="<?=$RELATIVE_PATH;?>index.php">Home</a></li>
+      <li><a href="<?=$RELATIVE_PATH;?>site-diagram.php">Site Diagram</a></li>
+    </ul>
+  </nav>

@@ -3,31 +3,6 @@
 main {
   background-color: hsl(var(--clr-neutral-100-hsl));
   min-height: 60vh;
-  // max-width: 200rem;
-}
-
-footer {
-  color: var(--clr-neutral-100);
-  padding: 2rem 0;
-  display: flex;
-  align-items: center;
-
-  .footer-nav {
-    margin-top: 5rem;
-    text-align: center;
-    
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      font-size: clamp(1.1rem, 2vw, 1.3rem);
-      color: hsl(var(--clr-neutral-100-hsl), 0.7);
-    }
-    a:hover,
-    a:focus {
-      color: hsl(var(--clr-neutral-100-hsl));
-    }
-  }
 }
 
 .container {
@@ -36,30 +11,29 @@ footer {
   position: relative;
 }
 
-
-.grid-ish {
+.row-split {
   display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.grid-ish > * {
-  flex: 1 1 20rem;
-}
-
 
 .grid-side-by-side {
   display: flex;
   gap: 2rem;
   justify-content: flex-start;
-  // border: 1px solid red;
 }
 
-// .small-screen-grid {
-//   display: flex;
-//   flex-direction: column;
-//   border: 1px solid red;
-// }
+.grid-services {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.grid-testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+}
 
 .card-with-side-image {
   display: flex;
@@ -71,11 +45,12 @@ footer {
   border-radius: 1rem;
   border: 1px solid hsl(var(--clr-neutral-1000-hsl));
   box-shadow: 0.5rem 0.5rem 0.5rem hsl(var(--clr-neutral-1000-hsl));
-  padding: 1rem;
+  padding: 2rem;
 
   img {
     border-radius: 1rem;
     max-height: 8rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem hsl(var(--clr-neutral-1000-hsl));
   }
 
   h3, h4 {
@@ -134,7 +109,7 @@ footer {
 
 
 .content-holder {
-  padding: 4rem 1rem;
+  padding: 6rem 1rem;
   
   h2 {
     margin-bottom: 1em;
@@ -161,6 +136,21 @@ footer {
 /* || Media Queries - Large Screens */
 
 @media (min-width: 800px) {
+
+  .content-holder {
+    padding: 8rem 1rem;
+  }
+
+  .grid-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+}
+
+
+@media (min-width: 960px) {
   .large-screen-only {
     display: block;
   }
@@ -169,16 +159,20 @@ footer {
   }
 
   .row-split {
-    // display: flex;
-    // flex-direction: row;
     display: grid;
-    // grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-columns: 1fr auto-fill;
-    // grid-template-columns: 40% 60%;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    align-items: center;
   }
 
 }
 
+@media (min-width: 1200px) {
+
+  .grid-testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+
+}

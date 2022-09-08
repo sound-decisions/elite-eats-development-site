@@ -131,3 +131,37 @@ ul {
 .small-screen-only {
   display: block;
 }
+
+
+footer {
+  color: var(--clr-neutral-100);
+  padding: 2rem 0;
+
+  .grid-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  img {
+    max-width: 50vw;
+  }
+
+  .footer-nav {
+    margin-top: 5rem;
+    text-align: center;
+    
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      color: hsl(var(--clr-neutral-100-hsl), 0.7);
+    }
+    a:hover,
+    a:focus {
+      color: hsl(var(--clr-neutral-100-hsl));
+    }
+  }
+}

@@ -8,6 +8,10 @@ if (!isset($RELATIVE_PATH)) {
 if (!isset($page_title)) {
     $page_title = 'Elite Eats - Development Version';
 }
+
+if (!isset($stylesheet)) {
+  $stylesheet = 'assets/css/style.css';
+}
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +23,7 @@ if (!isset($page_title)) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><?=$page_title;?></title>
   <link rel="shortcut icon" href="<?=$RELATIVE_PATH;?>assets/img/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="<?=$RELATIVE_PATH;?>assets/css/style.css" />
+  <link rel="stylesheet" href="<?=$RELATIVE_PATH . $stylesheet;?>" />
 </head>
 
 <body>

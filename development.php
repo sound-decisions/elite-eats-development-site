@@ -1,5 +1,7 @@
 <?php
 $page_title = 'Elite Eats - Development Version';
+$stylesheet = 'assets/css/style-dev.css';
+
 ?>
 <?php include 'includes/header.php';?>
 

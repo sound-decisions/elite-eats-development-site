@@ -24,7 +24,7 @@ if (!isset($page_title)) {
 
 <body>
   <header>
-    <div class="container row-header">
+    <div class="container row">
       <div>
         <a href="<?=$RELATIVE_PATH;?>index.php">
           <img src="<?=$RELATIVE_PATH;?>assets/img/elite-eats-logo-white-text-color-icon.png" class="logo" />
@@ -33,9 +33,7 @@ if (!isset($page_title)) {
       <nav class="large-screen">
         <ul>
           <li><a href="<?=$RELATIVE_PATH;?>index.php">Home</a></li>
-          <li><a href="<?=$RELATIVE_PATH;?>about.php">About</a></li>
-          <li><a href="<?=$RELATIVE_PATH;?>services.php">Services</a></li>
-          <li><a href="<?=$RELATIVE_PATH;?>contact.php">Contact</a></li>
+          <li><a href="<?=$RELATIVE_PATH;?>site-diagram.php">Site Diagram</a></li>
         </ul>
       </nav>
     </div>
@@ -44,8 +42,6 @@ if (!isset($page_title)) {
   <nav class="small-screen">
     <ul>
       <li><a href="<?=$RELATIVE_PATH;?>index.php">Home</a></li>
-      <li><a href="<?=$RELATIVE_PATH;?>about.php">About</a></li>
-      <li><a href="<?=$RELATIVE_PATH;?>services.php">Services</a></li>
-      <li><a href="<?=$RELATIVE_PATH;?>contact.php">Contact</a></li>
+      <li><a href="<?=$RELATIVE_PATH;?>site-diagram.php">Site Diagram</a></li>
     </ul>
   </nav>

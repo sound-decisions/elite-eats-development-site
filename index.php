@@ -30,18 +30,37 @@
         <h3>MS, RD, CSSD, IOC DIP SPORT NUTR</h3>
       </div>
       <div class="hero__actions">
-        <a href="about.php" class="button">Learn More</a>
+        <a href="services.php" class="button">Learn More</a>
       </div>
     </div>
   </section>
 
   <main>
 
-    <section class="bg-accent">
+    <section class="bg-neutral-light">
+      <div class="container row-split">
+        <img src="assets/img/jennifer_gibson_headshot.jpg" />
+        <div class="content-holder large-screen-only">
+          <h2>About Jenn</h2>
+          <p>Jennifer Gibson is an internationally recognized sport science and nutrition professional with 16 years of elite experience. Her applied physiology and nutrition work has included the NFL
+            (Chicago Bears & New Orleans Saints), US Olympic and Paralympic Committee, Womens Tennis Association, Canadian Olympic Teams as well as MLS & NBA clients.</p>
+        </div>
+      </div>
+      <div class="bg-primary small-screen-only">
+        <div class="content-holder text-light">
+          <h2>About Jenn</h2>
+          <p>Jennifer Gibson is an internationally recognized sport science and nutrition professional with 16 years of elite experience. Her applied physiology and nutrition work has included the NFL
+            (Chicago Bears & New Orleans Saints), US Olympic and Paralympic Committee, Womens Tennis Association, Canadian Olympic Teams as well as MLS & NBA clients.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-services">
       <div class="container">
-        <div class="content-holder">
+        <div>
 
           <h2>What We Can Do For You</h2>
+
           <div class="grid-services">
 
             <div class="card-with-top-image">
@@ -69,29 +88,18 @@
             </div>
 
           </div>
+
+          <div class="actions">
+            <a href="services.php" class="button">Learn More</a>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section class="bg-neutral-light">
-      <div class="container row-split">
-        <img src="assets/img/jennifer_gibson_headshot.jpg" />
-        <div class="content-holder large-screen-only">
-          <h2>About Jenn</h2>
-          <p>Jennifer Gibson is an internationally recognized sport science and nutrition professional with 16 years of elite experience. Her applied physiology and nutrition work has included the NFL
-            (Chicago Bears & New Orleans Saints), US Olympic and Paralympic Committee, Womens Tennis Association, Canadian Olympic Teams as well as MLS & NBA clients.</p>
-        </div>
-      </div>
-      <div class="bg-primary small-screen-only">
-        <div class="content-holder text-light">
-          <h2>About Jenn</h2>
-          <p>Jennifer Gibson is an internationally recognized sport science and nutrition professional with 16 years of elite experience. Her applied physiology and nutrition work has included the NFL
-            (Chicago Bears & New Orleans Saints), US Olympic and Paralympic Committee, Womens Tennis Association, Canadian Olympic Teams as well as MLS & NBA clients.</p>
-        </div>
-      </div>
-    </section>
 
-    <section class="bg-secondary">
+
+    <section class="section-testimonials">
       <div class="container">
         <div class="content-holder">
 
@@ -118,7 +126,9 @@ foreach ($testimonials as $key) {
 
             <div class="card-with-side-image">
               <div class="grid-side-by-side">
-                <img src="<?=$image;?>" alt="<?=$name;?>" />
+                <div class="image-holder">
+                  <img src="<?=$image;?>" alt="<?=$name;?>" />
+                </div>
                 <div>
                   <h3><?=$name;?></h3>
                   <h4><?=$details;?></h4>
@@ -133,6 +143,31 @@ foreach ($testimonials as $key) {
         </div>
       </div>
     </section>
+
+
+
+    <section class="section-contact">
+      <div class="container">
+        <div>
+
+          <h2>Contact Us</h2>
+
+          <div class="grid">
+
+            <div class="card-with-top-image card-max-width">
+              <img src="assets/img/Colorado-Springs-Road-Map-big.jpg" />
+              <p>Elite Eats Inc. is based in Colorado Springs, Colorado.</p>
+              <h3>Send Me An Email</h3>
+              <p><a href="mailto:jgibson@elite-eats.com" target="_blank" class="link-email">jgibson@elite-eats.com</a></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
 
 
   </main>

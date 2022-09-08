@@ -32,10 +32,11 @@ header {
           text-decoration: none;
           text-transform: uppercase;
           font-weight: bold;
+          letter-spacing: 0.2em;
         }
         a:hover,
         a:focus {
-          color: hsl(var(--clr-neutral-1000-hsl), 0.5);
+          color: hsl(var(--clr-neutral-1000-hsl), 0.7);
         }
       }
     }
@@ -60,6 +61,7 @@ nav.small-screen {
         text-transform: uppercase;
         font-weight: bold;
         font-size: clamp(1rem, 4vw, 1.5rem);
+        letter-spacing: 0.1em;
       }
       a:hover,
       a:focus {
@@ -169,9 +171,11 @@ main {
 }
 
 .link-email {
-  text-decoration: none;
   font-weight: bold;
   color: hsl(var(--clr-neutral-1000-hsl));
+}
+.link-email:hover {
+  color: hsl(var(--clr-accent-hsl));
 }
 
 /* || Media Queries - Large Screens */
